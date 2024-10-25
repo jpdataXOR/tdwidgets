@@ -36,5 +36,17 @@ for symbol in symbols:
     """
 tradingview_widgets += '</div>'
 
+# Add JavaScript to remove the copyright link
+tradingview_widgets += """
+<script>
+  window.onload = function() {
+    var copyrightLink = document.querySelector('a.label__link-dzbd7lyV');
+    if (copyrightLink) {
+      copyrightLink.remove();
+    }
+  };
+</script>
+"""
+
 # Render the TradingView widgets
 components.html(tradingview_widgets, height=600)  # Adjust height as needed
