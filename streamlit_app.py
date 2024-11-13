@@ -13,7 +13,7 @@ symbols = [
     "FOREXCOM:DJI",
     "FOREXCOM:AUS200",
     "FOREXCOM:JP225",
-    "FOREXCOM:HK50",
+    "THINKMARKETS:HSTECH",
     "FOREXCOM:UKXGBP"
 ]
 
